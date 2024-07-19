@@ -1,0 +1,144 @@
+@import url('https://fonts.google.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    
+   
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'Source Serif Pro', 'Helvetica Neue', serif;
+}
+body {
+	background: linear-gradient(-45deg, #000000, #242827, #464b4a, #656666);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .5s;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: #42fff9;
+    font-size: 20px;
+}
+h1,
+h2,
+h3 {
+    color: #42fff9;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+    transition: .5s;
+}
+
+a:hover {
+	font-size: 20px;
+}
+
+.headers {
+	padding: 8.5em 0;
+	background-image: url('https://dl.dropboxusercontent.com/u/18570019/header-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer,
+.header-intro,
+.header-name {
+	text-align: center;
+}
+
+.header-intro {
+	margin-bottom: 0em;
+	color: #ffffff;
+	font-size: 2.25em;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.header-name {
+	margin-top: -0.2em;
+	color: #42fff9;
+	font-size: 6.0em;
+	text-shadow: 0px 3px 0px #36397c;
+	font-weight: 700;
+}
+
+.about,
+.questions {
+	max-width: 37.5em;
+	margin: 0 auto;
+	margin-top: 3em;
+	line-height: 1.5em;
+}
+
+.questions h3 {
+	color: #3afabd;
+}
+
+.footer {
+	padding: 4em 0;
+	color: #081b29;
+	background: #a4f9f8;
+	margin-top: 3em;
+}
+
+.footer p {
+	text-align: center;
+}
+
+.social {
+	text-align: center;
+  margin-left: -2em;
+  
+}
+
+.social > li {
+    color: #081b29;
+	list-style: none;
+	display: inline-block;
+	margin: 0 1.0em;
+}

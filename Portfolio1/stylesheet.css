@@ -1,0 +1,236 @@
+@import url('https://fonts.google.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    
+    color: #ededed;
+}
+body {
+	background: linear-gradient(-45deg, #000000, #242827, #464b4a, #656666);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 500vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.logo{
+    font-size: 3rem;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.logo-active{
+ 
+    font-size: 2.5rem;
+    color: rgb(33, 33, 33);
+}
+.navbar{
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    transition: 0.3s;
+}
+.navbar a {
+    
+    font-size: 20px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .5s;
+}
+.navbar-active{
+ 
+    position:fixed;
+    height: 40px;
+    min-width: 10%;
+    background-color: #a4a4a4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: #42fff9;
+    font-size: 21px;
+}
+ul{
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+ul li .anchor{
+   
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin: 0 1.5rem;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+ul li.anchor-active{
+    color: #1c1c1c;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin: 0 1.5rem;
+    padding: 5px 10px;
+}
+section{
+    min-height: 100vh;
+    
+}
+ul li .anchor:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li a.active{
+    background-color: #fff;
+    color: #000;
+}
+#first{
+   
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-content{
+    border: #ededed solid;
+      max-width: 650px;
+}
+.home-content h1 {
+    line-height: 1.2;
+    font-size: 56px;
+    font-weight: 700;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #42fff9;
+}
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+.home-content .btn-box {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #42fff9;
+    border: 2px solid #42fff9;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:hover {
+    color: #42fff9;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #42fff9;
+}
+.btn-box a:nth-child(2):hover {
+    color: #000000;
+}
+.btn-box a:nth-child(2)::before {
+    background: linear-gradient(-45deg, #000000, #242827, #464b4a, #656666);
+}
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(-45deg, #000000, #242827, #464b4a, #656666);
+    z-index: -1;
+    transition: .5s;
+}    
+.btn-box a:hover::before {
+    width: 100%;
+}
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #42fff9;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #42fff9;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.home-sci a:hover {
+    color: #000000;
+}
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(-45deg, #000000, #242827, #464b4a, #656666);
+    z-index: -1;
+    transition: .5s;
+}
+.home-sci a:hover::before {
+    width: 100%;
+}

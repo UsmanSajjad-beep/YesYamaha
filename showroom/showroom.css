@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.mn{
+    background-color: #131313;
+}
+
+.nav{
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    transition: 0.3s;
+}
+
+.nav-active{
+    position: fixed;
+    height: 3rem;
+    width: 100%;
+    background-color: #a4a4a4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.logo{
+    font-family: "Anton SC", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+    font-size: 3rem;
+    color: gray;
+    transition: 0.3s;
+}
+
+.logo-active{
+    
+    font-size: 2rem;
+    color: rgb(33, 33, 33);
+}
+
+ul{
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li .anchor{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    font-size: 1.3rem;
+    margin: 0 1.5rem;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+ul li .anchor-active{
+    border-radius: 10px;
+    color: #1c1c1c;
+    text-decoration: none;
+    font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    font-size: 1.3rem;
+    margin: 0 1.5rem;
+    padding: 5px 10px;
+}
+
+ul li .anchor:hover{
+    
+    color: #6f6363;
+}
+
+ul li a.active{
+    color: #ffffff;
+}
+
+.first{
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    
+}
+
+.second{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+   
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+
+.third{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/showroom/plz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+}
+
+.four{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+
+    font-size: 3rem;
+    font-family: sans-serif;
+}
+#context{
+    position: relative;
+    display: flex;
+   justify-content: center;
+    max-width: 650px;
+    top: 15%;
+    font-size: 30px;
+    font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+    text-decoration-line: underline;
+    color: #000;
+}
+
+#sidebar{
+    position: relative;
+    top: 20%;
+    left: 100px;
+    overflow: hidden;
+    max-width: 250px;
+    height: 600px;
+    text-align: center;
+}
+#filter{
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+#idk{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+      text-decoration-line: underline;
+      color: #000;
+      position: relative;
+      right: 40px;
+}
+#list{
+    position: relative;
+    right: 38px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #000;
+}
+.sides{
+    position: relative;
+    left: 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #000;
+}
+#container{
+    position: relative;
+    max-width: 75%;
+    border-left: #000000 solid;
+    height: 820px;
+    bottom: 426px;
+    left: 24%;
+    overflow: hidden;
+}
+#box1{
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+   border: #fff solid;
+    max-width: 33%;
+    height: 400px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+#box1:hover{
+
+    box-shadow: 5px 5px 5px #4a4a4a ,-5px -5px 5px #4a4a4a ;
+}
+
+#box2{
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border: #fff solid;
+    max-width: 33%;
+    height: 400px;
+    overflow: hidden;
+    transition: .3s;
+}
+#box2:hover{
+
+    box-shadow: 5px 5px 5px #4a4a4a ,-5px -5px 5px #4a4a4a;
+}
+#box3{
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 34%;
+    border: #fff solid;
+    max-width: 33%;
+    height: 400px;
+    bottom: 810px;
+    overflow: hidden;
+    transition: .3s;
+}
+#box3:hover{
+    
+    box-shadow: 5px 5px 5px #4a4a4a ,-5px -5px 5px #4a4a4a 
+}
+#box4{
+    margin: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border: #fff solid;
+    max-width: 33%;
+    height: 400px;
+    left: 34%;
+    bottom: 810px;
+    overflow: hidden;
+    transition: .3s;
+}
+#box4:hover{
+   
+    box-shadow: 5px 5px 5px #4a4a4a ,-5px -5px 5px #4a4a4a
+}
+#innerbox1{
+    color: #000;
+    border-top: #000000 solid;
+    height: 200px;  
+    width: 30%;
+    position: absolute;
+    margin-top: 180px;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+#innerbox2{
+    color: #000;
+    border-top: #000000 solid;
+    height: 200px;  
+    width: 30%;
+    position: absolute;
+    margin-top: 180px;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+#innerbox3{
+    color: #000;
+    border-top: #000000 solid;
+    height: 200px;  
+    width: 90%;
+    position: absolute;
+    margin-top: 180px;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+#innerbox4{
+    color: #000;
+    border-top: #000000 solid;
+    height: 200px;  
+    width: 90%;
+    position: absolute;
+    margin-top: 180px;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+.btns{
+    font-size: 1rem;
+    width: 50%;
+    border: 3px solid #fff;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s ease-out;
+    padding: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btns:hover{
+    background: #fff;
+    border: 3px solid #000000;
+    color: #000;
+}
+#background{
+    
+    width: 100%;
+    height: 78vh;
+    position: relative;
+    top: 200px;
+    background: #000000;
+    display: flex;
+}
+#gallery1{
+    position: relative;
+    left: 5%;
+    background-image: url(/showroom/pexels-tomverdoot-1571884.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    min-width: 330px;
+    max-width: 40vh;
+    height: 57vh;
+    top: 14%;
+}
+#gallery2{
+    position: relative;
+    left: 16%;
+    background-image: url(/showroom/pexels-pixabay-50602.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    min-width: 330px;
+    overflow: hidden;
+    max-width: 40vh;
+    height: 57vh;
+    top: 96px;
+}
+#gallery3{
+    position: relative;
+    left: 26%;
+    background-image: url(/showroom/pexels-jusdevoyage-lyly-574387-4560626.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    background-size: cover;
+    min-width: 330px;
+    overflow: hidden;
+    max-width: 40vh;
+    height: 57vh;
+    top: 96px;
+}
+#container2{
+    border: #fff solid;
+    min-width: 50%;
+    color: #fff;
+}
+#info{
+    color: #ffffff;
+    right: 915px;
+    position: relative;
+    min-width: 330px;
+    height: 220px;
+    top: 55%;
+    overflow: hidden;
+}
+#motor1{
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 50px;
+    position: relative;
+    left: 20px;
+}
+#exp1{
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: small;
+    position: relative;
+    left: 130px;
+}
+.btns2{
+    font-size: 1rem;
+    padding: 10px 20px;
+   border: none;
+    background: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: .5s ease-out;
+    padding: 20px;
+    position: relative;
+    left: 85px;
+    width: 50%;
+}
+.btns2:hover{
+    background: #000000;
+    color: #ffffff;
+}
+#info2{
+    min-width: 330px;
+    color: #ffffff;
+    right: 752px;
+    position: relative;
+    width: 335px;
+    height: 220px;
+    top: 55%;
+    overflow: hidden;
+}
+#info3{
+    min-width: 330px;
+    color: #ffffff;
+    right: 604px;
+    position: relative;
+    width: 400px;
+    height: 220px;
+    top: 55%;
+    overflow: hidden;
+}
+#exp2{
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: small;
+    position: relative;
+    left: 115px;
+}
+#exp3{
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: small;
+    position: relative;
+    left: 140px;
+}
+
+.whole {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+   
+    width: 90%;
+    max-width: 600px;
+}
+.tabels {
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    color: #ffffff;
+    background: transparent;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #ffffff;
+    cursor: text;
+    transition: 0.3s;
+}
+button {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    transition: .2s;
+}
+button:active {
+    font-size: 10px;
+}
+input:focus~label {
+    top: -35px;
+    font-size: 14px;
+}
+input:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+textarea:focus~label,
+textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+#intro0{
+    min-width: 100%;
+    height: 200px;
+    position: relative;
+    top: 180px;
+    background: #ffffff;
+}
+#h1head{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4rem;
+}
+#h1head2{
+    font-family: "Teko", sans-serif;
+    font-weight: 400;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 2rem;
+}
+#intro2{
+    position: relative;
+    width: 40%;
+    height: 174px;
+    left: 17%;
+    top: 27px;
+}
+#footer{
+    color: #fff;
+    border: #fff solid;
+    position: relative;
+    width: 100%;
+    height: 56vh;
+    top: 180px;
+}
+#shop{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    left: 200px;
+    top: 20px;
+}
+#shoptag{
+    font-size: 20px;
+    letter-spacing: 2px;
+    left: 20px;
+    position: relative;
+}
+#list{
+    font-size: 15px;
+    color: #fff;
+    left: 20px;
+    transition: .3s;
+}
+.test{
+    transition: .3s ease;
+}
+.test:hover{
+     color: #8d8d8d;
+    cursor: pointer;
+}
+#experience{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    left: 380px;
+    bottom: 230px;
+}
+#connect{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    left: 580px;
+    bottom: 480px;
+}
+#corporate{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    left: 760px;
+    bottom: 730px;
+}
+#line{
+ 
+    height: 100px;
+    width: 45%;
+    bottom: 750px;
+    left: 210px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#lineheading{
+    font-weight: 200;
+    font-size: 20px;
+}
+#subheading{
+    font-weight: 100;
+    font-size: 10px;
+    color: #6b6b6b;
+    transition: .1;
+}
+#subheading:hover{
+    color: #8d8d8d;
+    cursor: pointer;
+}
+#realline{
+    width: 70%;
+    height: 50px;
+    border-top: #ffffff solid;
+    bottom: 750px;
+    left: 220px;
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+#side{
+    width: 20%;
+    height: 49px;
+    display: flex;
+    align-items: end;
+    font-size: 20px;
+    justify-content: right;
+}
+#something{
+    transition: .2s;
+}
+#something:hover{
+    cursor: pointer;
+    color: #6b6b6b;
+}
